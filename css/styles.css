@@ -190,10 +190,16 @@ form .btn-phone {
     font-size: 17px;
     font-weight: 700;
     align-items: center;
+    white-space: nowrap;
     border-radius: 25px;
     border: solid 2px #D9D9D9;
     box-shadow: 0 2px 10px #F2F2F2;
     padding: 0 20px;
+}
+
+.container-btn-filter button span{
+    display: flex;
+    align-items: center;
 }
 
 .container-btn-filter button:hover,
@@ -250,17 +256,6 @@ form .btn-phone {
     column-gap: 40px;
 }
 
-.container-sect-heberg-popular section{
-    background-color: #F2F2F2;
-    border-radius: 15px;
-    padding: 30px;
-    row-gap: 30px;
-}
-
-/* .container-cards {
-    
-} */
-
 .container-cards article{
     padding: 5px 5px 15px;
 }
@@ -268,7 +263,11 @@ form .btn-phone {
 .sect-hebergement{
     width: 66%;
     display: flex;
+    padding: 30px;
+    row-gap: 30px;
+    border-radius: 15px;
     flex-direction: column;
+    background-color: #F2F2F2;
 }
 
 .sect-hebergement .container-cards-heberg{
@@ -323,7 +322,11 @@ form .btn-phone {
     width: 33%;
     row-gap: 30px;
     display: flex;
+    padding: 30px;
+    row-gap: 30px;
+    border-radius: 15px;
     flex-direction: column;
+    background-color: #F2F2F2;
 }
 
 .sect-popular .most-popular{
@@ -456,5 +459,150 @@ footer a:hover{
     .sect-activity article h4{
         height: calc(100% - 200px);
         padding: 15.5px 19px 25.5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+    }
+
+    header img{
+        margin: 30px auto;
+    }
+
+    header nav{
+        column-gap: unset;
+
+        width: 100%;
+    }
+
+    header nav a{
+        padding-top: unset;
+
+        width: 50%;
+        text-align: center;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    header nav a:hover{
+        padding-top: unset;
+        border-top: unset;
+
+        border-bottom: 2px solid #0065FC;
+    }
+    
+    .presentation{
+        padding: 0 20px;
+    }
+
+    form .champ{
+        width: unset;
+        width: calc(100% - 60px);
+    }
+
+    form .btn-desktop{
+        display: none;
+    }
+
+    form .btn-phone{
+        display: block;
+    }
+
+    .filters,
+    .filters .container-btn-filter{
+        align-items: unset;
+        
+        row-gap: 15px;
+        flex-direction: column;
+    }
+
+    .container-btn-filter button{
+        padding: unset;
+
+        width: 50%;
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    .container-btn-filter button span::before{
+        font-size: 17px;
+    }
+
+    .container-sect-heberg-popular{
+        padding: unset;
+
+        flex-direction: column-reverse;
+        row-gap: 5px;
+    }
+
+    .container-sect-heberg-popular section{
+        border-radius: unset;
+    }
+
+    .sect-popular{
+        padding: 30px 20px;
+    }
+
+    .sect-popular .container-cards-popular{
+        flex-direction: column;
+    }
+
+    .sect-popular a{
+        width: unset;
+    }
+
+    .sect-hebergement{
+        row-gap: 15px;
+        padding: 30px 20px 20px;
+        background-color: white;
+    }
+
+    .sect-hebergement .container-cards-heberg{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .sect-hebergement a{
+        width: 100%;
+    }
+
+    .sect-hebergement .show-more{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .sect-activity{
+        margin: unset;
+    }
+
+    .sect-activity .container-cards-activity{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .sect-activity a{
+        width: unset;
+    }
+
+    .sect-activity article img{
+        height: 141px;
+    }
+
+    .sect-activity article h4{
+        height: calc(100% - 141px);
+        padding: 20px 19px;
+    }
+
+    footer{
+        margin: unset;
+        flex-direction: column;
+    }
+
+    footer div{
+        width: unset;
+        padding: 30px;
     }
 }
