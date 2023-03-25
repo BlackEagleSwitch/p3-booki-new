@@ -10,6 +10,14 @@ body {
     font-family: "Raleway", sans-serif;
     max-width: 1400px;
     margin: auto;
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+}
+
+input[type=text] {
+    outline: none;
+    padding: 0 10px 0 15px;
 }
 
 a,
@@ -32,4 +40,176 @@ h3 {
 
 h4 {
     font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 19px;
+    margin: 30px 50px;
+}
+
+header nav {
+    display: flex;
+    column-gap: 69px;
+    margin-right: 50px;
+}
+
+header nav a {
+    padding-top: 16px;
+}
+
+header nav a:hover {
+    border-top: solid 2px #0065FC;
+    padding-top: 14px;
+    color: #0065FC;
+}
+
+.presentation {
+    row-gap: 35px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.presentation .found-heberg {
+    row-gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation form {
+    position: relative;
+}
+
+form .loc {
+    width: 50px;
+    height: 49px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+    background-color: #F2F2F2;
+    color: black;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+form .champ {
+    width: 195px;
+    height: 49px;
+    font-size: 18px;
+    font-weight: 700;
+    border: solid 2px #F2F2F2;
+    margin-left: 50px;
+}
+
+form .champ::placeholder {
+    color: black;
+}
+
+form .submit {
+    height: 49px;
+    font-size: 18px;
+    background-color: #0065FC;
+    color: white;
+
+    position: absolute;
+    bottom: 0;
+}
+
+form .btn-desktop {
+    width: 132px;
+    font-weight: 700;
+    border-radius: 0 15px 15px 0;
+    left: 245px;
+}
+
+form .btn-desktop:hover {
+    opacity: .85;
+    box-shadow: 2px 4px 10px #D9D9D9;
+}
+
+form .btn-phone {
+    width: 49px;
+    border-radius: 15px;
+    display: none;
+    right: 0;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.filters .container-btn-filter,
+.container-btn-filter div {
+    display: flex;
+    column-gap: 20px;
+}
+
+.container-btn-filter button {
+    height: 50px;
+    display: flex;
+    font-size: 17px;
+    font-weight: 700;
+    align-items: center;
+    border-radius: 25px;
+    border: solid 2px #D9D9D9;
+    padding: 0 20px;
+}
+
+.container-btn-filter button:hover,
+.container-btn-filter button:focus {
+    background-color: #DEEBFF;
+}
+
+.container-btn-filter button span::before,
+.more-info::before {
+    color: #0065FC;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 10px;
+}
+
+.money::before {
+    content: '\f53a';
+}
+
+.person::before {
+    content: '\f183';
+}
+
+.heart::before {
+    content: '\f004';
+}
+
+.fire::before {
+    content: '\f06d';
+}
+
+.more-info{
+    display: flex;
+    align-items: center;
+}
+
+.more-info::before{
+    content: '\f129';
+    font-size: 10px;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: center;
+    border: solid 1px #D9D9D9;
 }
