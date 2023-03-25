@@ -1,0 +1,35 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    max-width: 1400px;
+    margin: auto;
+}
+
+a,
+button,
+input {
+    background-color: transparent;
+    text-decoration: unset;
+    color: black;
+    border: unset;
+}
+
+h1,
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
