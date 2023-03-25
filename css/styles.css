@@ -181,7 +181,8 @@ form .btn-phone {
 .filters .container-btn-filter,
 .container-btn-filter div {
     display: flex;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .container-btn-filter button {
@@ -510,18 +511,21 @@ footer a:hover{
         display: block;
     }
 
-    .filters,
-    .filters .container-btn-filter{
+    .filters{
         align-items: unset;
-        
-        row-gap: 15px;
         flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .filters .container-btn-filter{
+        flex-direction: row;
+        gap: 15px;
     }
 
     .container-btn-filter button{
         padding: unset;
 
-        width: 50%;
+        width: calc(50% - 10px);
         font-size: 14px;
         justify-content: center;
     }
